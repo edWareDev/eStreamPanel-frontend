@@ -1,0 +1,51 @@
+@font-face {
+    font-family: MontBlack;
+    src: url('../fonts/Mont-Black.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontHeavy;
+    src: url('../fonts/Mont-Heavy.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontBold;
+    src: url('../fonts/Mont-Bold.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontSemiBold;
+    src: url('../fonts/Mont-SemiBold.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontRegular;
+    src: url('../fonts/Mont-Regular.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontBook;
+    src: url('../fonts/Mont-Book.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MontLight;
+    src: url('../fonts/Mont-Light.woff2');
+    font-display: swap;
+}
+
+
+
+$font7: 'MontBlack', sans-serif;
+$font6: 'MontHeavy', sans-serif;
+$font5: 'MontBold', sans-serif;
+$font4: 'MontSemiBold', sans-serif;
+$font3: 'MontRegular', sans-serif;
+$font2: 'MontBook', sans-serif;
+$font1: 'MontLight', sans-serif;

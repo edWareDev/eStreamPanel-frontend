@@ -1,0 +1,140 @@
+aside {
+    width: 22rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color13;
+
+    .logoContainer {
+        width: 100%;
+        height: 6rem;
+        background-color: $color13;
+        border: none;
+        color: $color00;
+        font-size: 2.4rem;
+        font-family: $font5;
+        cursor: pointer;
+    }
+
+    nav {
+        width: 100%;
+        height: calc(100% - 5rem);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            align-items: flex-start;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 4rem;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .6rem;
+                    font-size: 1.6rem;
+                    color: $color00;
+                    font-family: $font4;
+                    transition: color ease-in .3s;
+
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+
+                        path {
+                            fill: $color00;
+                            transition: fill ease-in .3s;
+                        }
+                    }
+
+                    &:hover {
+                        color: $color41;
+
+                        svg {
+                            path {
+                                fill: $color41;
+                            }
+                        }
+                    }
+                }
+
+                .active {
+                    color: $color44;
+
+                    svg {
+                        path {
+                            fill: $color44;
+                        }
+                    }
+
+                    &:hover {
+                        color: $color44;
+
+                        svg {
+                            path {
+                                fill: $color44;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .6rem;
+                font-size: 1.6rem;
+                color: $color00;
+                font-family: $font4;
+                transition: color ease-in .3s;
+                background-color: transparent;
+                border: none;
+                padding: 0 4rem;
+                cursor: pointer;
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+
+                    path {
+                        fill: $color00;
+                        transition: fill ease-in .3s;
+                    }
+                }
+
+                &:hover {
+                    color: $color41;
+
+                    svg {
+                        path {
+                            fill: $color41;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                width: 100%;
+                height: calc(100% - 8rem);
+                padding: 1rem 0;
+            }
+
+            &:nth-child(2) {
+                padding: 1rem 0;
+                width: 100%;
+                height: 8rem;
+                // border: 1px solid red;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,98 @@
+.login {
+    background-color: $color15;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .loginModal {
+        width: 100%;
+        max-width: 40rem;
+        height: 100%;
+        max-height: 20rem;
+        background-color: $color00;
+        padding: .5rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 .5rem rgba($color99, .5);
+
+        .appTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 3rem;
+            color: $color13;
+            font-family: $font5;
+        }
+
+        .loginUser {
+            width: 100%;
+            height: calc(100% - 3rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+
+            .data {
+                // background-color: red;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                label {
+                    font-size: 1.4rem;
+                    text-align: center;
+                    color: rgba($color99, .8);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5rem;
+
+                    input {
+                        width: 60%;
+                        border: none;
+                        outline: none;
+                        text-align: center;
+                        font-size: 1.4rem;
+                        font-family: $font2;
+                        border-bottom: 1px solid $color13;
+                        padding-bottom: .2rem;
+                    }
+                }
+            }
+
+            .buttons {
+
+                // background-color: red;
+                // width: 100%;
+                button {
+                    border: none;
+
+                    background-color: $color00;
+                    color: $color13;
+                    border: 1px solid $color13;
+                    padding: .5rem 2rem;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                    font-family: $font4;
+                    transition: background .3s, color .3s, border .3s;
+
+                    &:hover {
+                        background-color: $color13;
+                        color: $color00;
+                        border: 1px solid $color13;
+                    }
+                }
+            }
+
+        }
+    }
+}

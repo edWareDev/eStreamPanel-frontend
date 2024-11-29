@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 10px;
+
+    @media screen and (max-width:$bp-xxlarge) {
+        font-size: 10px;
+    }
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    user-select: none;
+}
+
+body {
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-family: $font3;
+    position: relative;
+    background-color: $color00;
+    overflow: hidden;
+}
